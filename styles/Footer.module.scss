@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    min-height: 7rem;
+    background: var(--accent);
+    align-items: center;
+
+    @media only screen and (max-device-width: 640px) {
+        .socials {
+            flex-direction: column;
+        }
+    }
+
+    .socials {
+        display: flex;
+        margin-left: 3rem;
+        margin-right: auto;
+
+        svg {
+            padding: 0 1rem;
+            width: 30px;
+            &:hover {
+                color: var(--scrollbar);
+            }
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--scrollbar);
+        }
+
+        a {
+            margin: 0.1rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
