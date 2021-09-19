@@ -8,7 +8,7 @@ export default function Home() {
         <div className={styles.container}>
             <Head>
                 <title>ItChat | Imagine a safe place</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.svg" />
 
                 <meta property="og:title" content="ItChat" />
                 <meta property="og:url" content="https://itchat.world" />
