@@ -13,7 +13,20 @@
     }
 
     .screenshot {
-        margin-top: -3rem;
+        width: 800px;
+        margin-top: -1rem;
         pointer-events: none;
+        box-shadow: rgb(0 0 0 / 20%) 0 5px 30px;
+
+        > div {
+            position: unset !important;
+        }
+
+        .image {
+            object-fit: contain;
+            width: 100% !important;
+            position: relative !important;
+            height: unset !important;
+        }
     }
 }

@@ -22,14 +22,10 @@ export default function Home() {
                     Imagine A <span className={styles.safe}>Safe</span> Place
                 </h1>
 
-                <Image
-                    src="https://trymumble.com/assets/img/hero-pic.png"
-                    alt="Screenshot of itchat app."
-                    className={styles.screenshot}
-                    autoFocus
-                ></Image>
+                <div className={styles.screenshot}>
+                    <Image alt="UI of itchat app." src="/screenshot.png" layout="fill" className={styles.image} />
+                </div>
             </main>
-
             <Footer />
         </div>
     )
