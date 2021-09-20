@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Head from 'next/head'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
@@ -21,11 +22,12 @@ export default function Home() {
                     Imagine A <span className={styles.safe}>Safe</span> Place
                 </h1>
 
-                <img
+                <Image
                     src="https://trymumble.com/assets/img/hero-pic.png"
+                    alt="Screenshot of itchat app."
                     className={styles.screenshot}
-                    autofocus
-                ></img>
+                    autoFocus
+                ></Image>
             </main>
 
             <Footer />
