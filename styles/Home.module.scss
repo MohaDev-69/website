@@ -12,9 +12,16 @@
         }
     }
 
+    @media (max-width: 640px) {
+        .imagine {
+            font-size: 1.7rem;
+        }
+    }
+
     .screenshot {
-        width: 800px;
+        width: 65%;
         margin-top: -1rem;
+        margin-bottom: 2rem;
         pointer-events: none;
         box-shadow: rgb(0 0 0 / 20%) 0 5px 30px;
 

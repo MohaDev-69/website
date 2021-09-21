@@ -16,22 +16,24 @@ export default function Footer() {
                 </a>
             </div>
 
-            <div className={styles.column}>
-                <span>Developers</span>
-                <a href="#">Documentation</a>
-                <a href="#">Contribute</a>
-            </div>
+            <div className={styles.links}>
+                <div className={styles.column}>
+                    <span>Developers</span>
+                    <a href="#">Documentation</a>
+                    <a href="#">Contribute</a>
+                </div>
 
-            <div className={styles.column}>
-                <span>Team</span>
-                <a href="#">About us</a>
-                <a href="mailto:support@itchat.world">Email</a>
-            </div>
+                <div className={styles.column}>
+                    <span>Team</span>
+                    <a href="#">About us</a>
+                    <a href="mailto:support@itchat.world">Email</a>
+                </div>
 
-            <div className={styles.column}>
-                <span>Lagels</span>
-                <a href="/tos">Terms of service</a>
-                <a href="/privacy">Privacy policy</a>
+                <div className={styles.column}>
+                    <span>Lagels</span>
+                    <a href="/tos">Terms of service</a>
+                    <a href="/privacy">Privacy policy</a>
+                </div>
             </div>
         </footer>
     )

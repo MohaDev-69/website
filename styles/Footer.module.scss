@@ -1,21 +1,17 @@
 .footer {
     display: flex;
-    min-height: 7rem;
     background: var(--accent);
     align-items: center;
-
-    @media only screen and (max-device-width: 640px) {
-        .socials {
-            flex-direction: column;
-        }
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     .socials {
         display: flex;
         margin-left: 3rem;
-        margin-right: auto;
+        justify-self: flex-end;  
 
         svg {
+            transition: all .4s ease;
             padding: 0 1rem;
             width: 30px;
             &:hover {
@@ -24,22 +20,44 @@
         }
     }
 
-    .column {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-
-        span {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--scrollbar);
+    @media (max-width: 640px) {
+        justify-content: center;
+        .socials {
+            margin-top: 1rem;
         }
+    }
 
-        a {
-            margin: 0.1rem;
-            &:hover {
-                text-decoration: underline;
+    .links {
+        display: flex;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+    
+            span {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: var(--scrollbar);
+                margin-bottom: 0.1rem;
+            }
+    
+            a {
+                margin: 0.1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
+    }
+
+    @media (max-width: 640px) {
+        .column {
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            span {
+                font-size: 1rem;
+            }
+        } 
     }
 }
