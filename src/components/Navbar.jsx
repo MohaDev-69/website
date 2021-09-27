@@ -5,8 +5,10 @@ function Navbar() {
 
     <div className="nav animate__animated animate__slideInDown">
     <p className="logo">Itchat</p>
-      <button className="btn DownloadBtn">Download</button>
+      <div className="NavButtons">
+      <button className="btn DownloadBtn">Download</button>&nbsp;
       <button className="btn loginBtn">Login</button>
+        </div>
         
     
 

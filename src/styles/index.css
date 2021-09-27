@@ -49,18 +49,24 @@ body,
   text-decoration: none !important;
 }
 
+.NavButtons {
+  display : inline-grid;
+  grid-template-columns: auto auto auto;
+  
+}
 
-.loginBtn {
+.NavButtons > .loginBtn {
   font-size : 15px !important;
 }
 
-.DownloadBtn {
+.NavButtons > .DownloadBtn {
   font-size : 15px !important;
   cursor: not-allowed !important;
   pointer-events: none;
   background-color: var(--dark-gray-border) !important;
-  margin-right : -80.5%;
 }
+
+
 
 /* =====> MAIN PAGE STYLE <=====*/
 
@@ -182,6 +188,7 @@ letter-spacing: 1px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    bottom: 0;
  }
   .footer .socials {
     display: flex;
@@ -243,17 +250,8 @@ letter-spacing: 1px;
  /* ======>  Responsive <====== */
 
  /* Mobile Responsive */
- @media only screen and (max-width: 520px){
-  .DownloadBtn {
-    margin-left : -15.5% !important;
-  }
-}
 
  @media only screen and (max-width : 812px){
-.DownloadBtn {
-  margin-left : -35.5% !important;
-}
-
 .mainImg {
   position: relative;
   display : inline;
@@ -262,31 +260,11 @@ letter-spacing: 1px;
   right: 20px;
   width : 90%;
   }
-
 }
 
-@media only screen and (max-width: 720px){
-  .DownloadBtn {
-    margin-right : -49.5% !important;
-  }
-}
-
-@media only screen and (max-width: 653px){
-  .DownloadBtn {
-    margin-right : -1.5% !important;
-  }
-  .loginBtn {
-    margin-right: -6.5% !important;
-  }
-}
-
-      /* ipad Responsive */
+/* ipad Responsive */
 @media only screen and (max-width: 1024px){
-  .DownloadBtn {
-    margin-right : -64.5% !important;
-  }
-  
-  .mainImg {
+   .mainImg {
     position: relative;
     display : inline;
     float : left;
