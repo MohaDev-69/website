@@ -7,10 +7,10 @@ function Footer() {
                 <a href="https://github.com/Itchat-app">
                     <Github />
                 </a>
-                <a href="#">
+                <a href="/soon">
                     <Reddit />
                 </a>
-                <a href="#">
+                <a href="/soon">
                     <Twitter />
                 </a>
             </div>
@@ -18,13 +18,13 @@ function Footer() {
             <div className="links">
                 <div className="column">
                     <span>Developers</span>
-                    <a href="#">Documentation</a>
-                    <a href="#">Contribute</a>
+                    <a href="/docs">Documentation</a>
+                    <a href="/contribute">Contribute</a>
                 </div>
 
                 <div className="column">
                     <span>Team</span>
-                    <a href="#">About us</a>
+                    <a href="/about">About us</a>
                     <a href="mailto:support@itchat.world">Email</a>
                 </div>
 
