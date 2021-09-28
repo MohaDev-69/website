@@ -40,7 +40,7 @@ body,
   align-items: center;
   min-height: 3rem;
   padding: 1vh 1rem;
-  background: var(--dark-bg-color);
+  background-color: var(--dark-bg-color);
 }
 
 .logo {
@@ -95,7 +95,7 @@ body,
   display: inline;
   float: left;
   margin: 0;
-  right: 130px;
+  right: 7vh;
   z-index: 2;
 }
 
@@ -273,6 +273,20 @@ body,
 
 /* ======>  Responsive <====== */
 
+@media only screen and (max-height: 890px) {
+  .mainImg {
+    position: relative;
+    display: inline;
+    float: left;
+    margin: 0;
+    width: 30vw;
+  }
+
+  .svgg {
+    bottom: -20vh;
+  }
+}
+
 /* Mobile Responsive */
 
 @media only screen and (max-width: 812px) {
@@ -284,6 +298,9 @@ body,
     right: 20px;
     width: 90%;
   }
+  .svgg {
+    bottom: -0.5vh;
+  }
 }
 
 /* ipad Responsive */
@@ -293,7 +310,11 @@ body,
     display: inline;
     float: left;
     margin: 0;
-    right: 20px;
+    right: 0px;
     width: 90%;
+  }
+
+  .svgg {
+    bottom: -0.5vh;
   }
 }
