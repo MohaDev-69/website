@@ -1,19 +1,14 @@
 function Navbar() {
   return (
-   
     <>
-
-    <div className="nav animate__animated animate__slideInDown">
-    <p className="logo">Itchat</p>
-      <div className="NavButtons">
-      <button className="btn DownloadBtn">Download</button>&nbsp;
-      <button className="btn loginBtn">Login</button>
+      <div className="nav animate__animated animate__slideInDown">
+        <p className="logo">ITCHAT</p>
+        <div className="NavButtons">
+          <button className="btn DownloadBtn">Download</button>&nbsp;
+          <button className="btn loginBtn">Login</button>
         </div>
-        
-    
-
-    </div>
-   </>
+      </div>
+    </>
   );
 }
 
